@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Highland Padel & More</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+  body, html {
+    margin: 0; padding: 0; font-family: 'Poppins', sans-serif; background: #0c1b28;
+    color: #e6f5ea; scroll-behavior: smooth;
+  }
+  header {
+    position: fixed; top: 0; width: 100%; padding: 1.2rem 3rem;
+    background: transparent; display: flex; align-items: center; justify-content: space-between;
+    transition: background 0.3s ease;
+    z-index: 1000;
+  }
+  header.scrolled {
+    background: #101e2edd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  }
+  header img {
+    height: 55px;
+  }
+  nav a {
+    color: #10e3a3; margin-left: 2rem; text-decoration: none; font-weight: 600;
+  }
+  nav a:hover {
+    color: #4df3c6;
+  }
+  .hero {
+    height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+    text-align: center; padding: 0 2rem; position: relative;
+  }
+  .hero::after {
+    content: ''; position: absolute; inset: 0; background: rgba(12,27,40, 0.6);
+  }
+  .hero-content {
+    position: relative; z-index: 2;
+    color: #e6f5ea;
+    max-width: 600px;
+  }
+  .hero h1 {
+    font-size: 3.5rem; margin: 0 0 1rem;
+    text-shadow: 1px 1px 5px #0bf5aecc;
+  }
+  .hero p {
+    font-size: 1.25rem; font-weight: 600;
+    text-shadow: 1px 1px 3px #0bf5aeaa;
+  }
+  section {
+    padding: 4rem 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    opacity: 0; transform: translateY(30px);
+    transition: 0.8s ease all;
+  }
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  h2 {
+    font-size: 2.4rem;
+    color: #10e3a3;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 2rem;
+  }
+  .card {
+    background: #153e5aee;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 8px 30px #0bf5ae55;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 50px #0bf5aeaa;
+  }
+  .card h3 {
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  .card p {
+    font-weight: 400;
+    color: #b6d8cc;
+  }
+  form {
+    background: #174585cc;
+    max-width: 450px;
+    margin: 2rem auto 0;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 40px #0bf5ae77;
+  }
+  form input, form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 1.2rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  form button {
+    background: #10e3a3;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+    color: #0c1b28;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  form button:hover {
+    background: #4df3c6;
+  }
+  footer {
+    padding: 2rem 0;
+    text-align: center;
+    background: #101e2e;
+    font-size: 0.9rem;
+    color: #88cbbf;
+  }
+</style>
+</head>
+<body>
+
+<header id="header">
+  <img src="logo.png" alt="Highland Padel & More Logo" />
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#services">Strutture</a>
+    <a href="#contact">Contatti</a>
+  </nav>
+</header>
+
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <h1>Highland Padel & More</h1>
+    <p>Dove il benessere incontra il divertimento</p>
+    <p>Immerso tra le montagne, nel cuore del verde, a due passi dal fiume.</p>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Le Nostre Strutture</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Campi Padel</h3>
+      <p>3 campi per la tua partita perfetta</p>
+    </div>
+    <div class="card">
+      <h3>Pickleball</h3>
+      <p>Un campo per divertirsi anche con Pickleball</p>
+    </div>
+    <div class="card">
+      <h3>Skateboard</h3>
+      <p>Pista dedicata per gli amanti dello skateboard</p>
+    </div>
+    <div class="card">
+      <h3>Basket, Pallavolo, Calcio a 5</h3>
+      <p>Campi per tanti sport in un unico posto</p>
+    </div>
+    <div class="card">
+      <h3>Piscina & Solarium</h3>
+      <p>Relax e divertimento d’estate</p>
+    </div>
+    <div class="card">
+      <h3>Area Bimbi & Dog Park</h3>
+      <p>Spazi pensati anche per i più piccoli e i tuoi amici a quattro zampe</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contattaci</h2>
+  <form method="POST" action="https://formspree.io/f/tuo-codice">
+    <input type="text" name="nome" placeholder="Il tuo nome" required />
+    <input type="email" name="email" placeholder="La tua email" required />
+    <textarea name="messaggio" rows="4" placeholder="Scrivi qui il tuo messaggio" required></textarea>
+    <button type="submit">Invia</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Highland Padel & More | Dove il benessere incontra il divertimento | Seguici su Instagram & Facebook
+</footer>
+
+<script>
+  // Cambia colore header al scroll
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 50){
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
+  // Fade-in sezione al scroll
+  const sections = document.querySelectorAll('section');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+  sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
