@@ -1245,7 +1245,14 @@ body {
 .footer__logo {
   height: 40px;
   width: auto;
+  justify-content: center;
   border-radius: var(--radius-sm);
+}
+.footer__logo {
+  display: block;
+  margin: 0 auto;
+  justify-content: center;
+  height: 50px;  
 }
 
 .footer__slogan {
