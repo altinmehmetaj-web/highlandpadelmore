@@ -615,6 +615,9 @@ select.form-control {
   padding-right: var(--space-16);
   padding-left: var(--space-16);
 }
+.container { max-width: 100%; padding: 0 16px; }
+.hero { padding: 24px 16px; }
+.hero img.logo { max-width: 320px; }
 
 @media (min-width: 640px) {
   .container {
@@ -624,10 +627,11 @@ select.form-control {
 @media (min-width: 768px) {
   .container {
     max-width: var(--container-md);
-  }
-  @media (max-width: 768px) {
-  .nav {
-    
+.hero { padding: 48px 24px; }
+.hero img.logo { max-width: 420px; }
+.hero h1 { font-size: 32px; }
+}
+   
   }
   .nav.open {
     display: block;
