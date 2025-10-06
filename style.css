@@ -1360,3 +1360,42 @@ section.hero {
   display: flex;
   align-items: center;
 }
+/* Nasconde il menu e mostra solo bottone hamburger su mobile */
+.nav {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Menu visibile quando si clicca hamburger */
+.nav.open {
+  display: block;
+}
+
+/* Stile bottone hamburger */
+.mobile-menu-btn {
+  display: block;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 10px;
+}
+
+/* Le tre linee del bottone hamburger */
+.mobile-menu-btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Su desktop mostra sempre il menu e nascondi hamburger */
+@media (min-width: 992px) {
+  .nav {
+    display: block !important;
+  }
+  .mobile-menu-btn {
+    display: none;
+  }
+}
