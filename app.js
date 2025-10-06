@@ -1,6 +1,22 @@
 // Highland Padel & More - Interactive JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', () => {
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const nav = document.querySelector('.nav');
+
+  if (mobileMenuBtn && nav) {
+    mobileMenuBtn.addEventListener('click', () => {
+      nav.classList.toggle('open');
+
+      // animazione delle tre linee
+      const spans = mobileMenuBtn.querySelectorAll('span');
+      spans[0].style.transform = nav.classList.contains('open') ? 'rotate(45deg) translate(5px, 5px)' : 'none';
+      spans[1].style.opacity   = nav.classList.contains('open') ? '0' : '1';
+      spans[2].style.transform = nav.classList.contains('open') ? 'rotate(-45deg) translate(7px, -6px)' : 'none';
+    });
+  }
+});
     
     // Mobile Menu Toggle
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
