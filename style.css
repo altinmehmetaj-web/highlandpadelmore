@@ -625,6 +625,29 @@ select.form-control {
   .container {
     max-width: var(--container-md);
   }
+  @media (max-width: 768px) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: rgba(15, 23, 42, 0.98);
+    padding: 20px 0 10px 0;
+    z-index: 9999;
+  }
+  .nav.open {
+    display: block;
+  }
+  .nav__list {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+  .mobile-menu-btn {
+    display: flex;
+  }
+    
 }
 @media (min-width: 1024px) {
   .container {
