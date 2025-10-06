@@ -627,14 +627,7 @@ select.form-control {
   }
   @media (max-width: 768px) {
   .nav {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background: rgba(15, 23, 42, 0.98);
-    padding: 20px 0 10px 0;
-    z-index: 9999;
+    
   }
   .nav.open {
     display: block;
