@@ -225,7 +225,6 @@
     .social-card h3 {
         font-size: 20px;
     }
-}
 
 @media (max-width: 480px) {
     .social-title {
@@ -256,4 +255,15 @@
         font-size: 12px;
     }
 }
-–
+.social-icons-grid a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.social-icons-grid a:hover {
+    color: #7cb342;
+}
+
+
