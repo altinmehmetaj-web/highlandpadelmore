@@ -279,6 +279,19 @@
 .social-card a:hover {
     color: #7cb342 !important;
 }
+    .social-media-section a,
+.social-media-section a:visited,
+.social-media-section a:active {
+    color: #fff !important;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+
+.social-media-section a:hover,
+.social-media-section a:focus {
+    color: #7cb342 !important;
+}
+
 
 
 
