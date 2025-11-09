@@ -265,5 +265,20 @@
 .social-icons-grid a:hover {
     color: #7cb342;
 }
+    .social-media-section a, 
+.social-media-container a, 
+.social-icons-grid a, 
+.social-card a {
+    color: #ffffff !important;
+    font-weight: 600;
+    text-decoration: none !important;
+}
+.social-media-section a:hover,
+.social-media-container a:hover,
+.social-icons-grid a:hover,
+.social-card a:hover {
+    color: #7cb342 !important;
+}
+
 
 
