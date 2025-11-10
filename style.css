@@ -277,7 +277,7 @@
 .social-media-container a:hover,
 .social-icons-grid a:hover,
 .social-card a:hover {
-    color: #7cb342 !important;
+    color: ##00bcd4 !important;
 }
     .social-media-section a,
 .social-media-section a:visited,
@@ -289,7 +289,7 @@
 
 .social-media-section a:hover,
 .social-media-section a:focus {
-    color: #7cb342 !important;
+    color: ##00bcd4 !important;
 }
 .main-title, h1.main-title {
   margin-top: 0 !important;
