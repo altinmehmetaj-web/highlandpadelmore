@@ -291,14 +291,17 @@
 .social-media-section a:focus {
     color: #7cb342 !important;
 }
-.hero-img-section,
-.hero-img-section img,
-.main-title,
-h1.main-title {
-    margin-bottom: 0 !important;
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+.main-title, h1.main-title {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1 !important;
+}
+
+.hero-img-section img {
+  margin-bottom: 0 !important;
+  display: block;
 }
 
 
