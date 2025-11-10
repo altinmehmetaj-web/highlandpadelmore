@@ -961,6 +961,21 @@ function rejectCookies() {
   // Qui puoi bloccare i cookie di terze parti se vuoi
 }
 </script>
+<!-- Qui il resto del tuo sito -->
+<div id="cookie-banner"> ... </div>
+<div id="cookie-policy-modal" class="modal"> ... </div>
+
+<script>
+function acceptCookies() {
+  document.getElementById('cookie-banner').style.display = 'none';
+  // Salva preferenze se vuoi
+}
+function rejectCookies() {
+  document.getElementById('cookie-banner').style.display = 'none';
+  // Blocca cookie di terze parti se vuoi
+}
+</script>
 
 </body>
 </html>
+
