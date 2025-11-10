@@ -931,15 +931,24 @@ textarea.form-control {
  <footer class="site-footer">
   <hr>
   <div class="footer-links">
+      <a href="#" onclick="document.getElementById('privacy-modal').style.display='block'; return false;">Privacy Policy</a>
     <a href="privacy.html" target="_blank">Privacy Policy</a> |
     <a href="cookie.html" target="_blank">Cookie Policy</a> |
     <a href="legal.html" target="_blank">Note Legali</a>
   </div>
   <div style="margin-top:12px; font-size:13px;">&copy; Highland Padel & More. Tutti i diritti riservati.</div>
 </footer>
-
   </section>
 </footer>
-
+<div id="privacy-modal" class="modal" style="display:none;">
+  <div class="modal-content">
+    <span class="close" onclick="document.getElementById('privacy-modal').style.display='none'">&times;</span>
+    <h2>Privacy Policy</h2>
+    <p>
+      <!-- Inserisci qui il testo della privacy, anche quello GDPR -->
+      La presente informativa riguarda il trattamento dei dati personali...
+    </p>
+  </div>
+</div>
 </body>
 </html>
