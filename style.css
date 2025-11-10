@@ -165,7 +165,7 @@
 
 .social-card.instagram:hover {
     background: linear-gradient(135deg, rgba(45, 80, 22, 0.4), rgba(45, 80, 22, 0.2));
-    border-color: #558b2f;
+    border-color: #00bcd4f;
 }
 
 .social-card.instagram:hover .social-icon-wrapper {
@@ -175,7 +175,7 @@
 
 .social-card.tiktok:hover {
     background: linear-gradient(135deg, rgba(33, 64, 17, 0.4), rgba(33, 64, 17, 0.2));
-    border-color: #33691e;
+    border-color: #00bcd4;
 }
 
 .social-card.tiktok:hover .social-icon-wrapper {
@@ -189,7 +189,7 @@
 }
 
 .social-card.youtube:hover .social-icon-wrapper {
-    background: #6b9d5c;
+    background: #00bcd4;
     box-shadow: 0 10px 25px rgba(107, 157, 92, 0.4);
 }
 
@@ -256,7 +256,7 @@
     }
 }
 .social-icons-grid a {
-    color: #ffffff;
+    color: #00bcd4;
     font-weight: 600;
     text-decoration: none;
     transition: color 0.2s;
@@ -277,7 +277,7 @@
 .social-media-container a:hover,
 .social-icons-grid a:hover,
 .social-card a:hover {
-    color: ##00bcd4 !important;
+    color: #00bcd4 !important;
 }
     .social-media-section a,
 .social-media-section a:visited,
@@ -289,7 +289,7 @@
 
 .social-media-section a:hover,
 .social-media-section a:focus {
-    color: ##00bcd4 !important;
+    color: #00bcd4 !important;
 }
 .main-title, h1.main-title {
   margin-top: 0 !important;
