@@ -5,39 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Highland Padel & More - Dove il benessere incontra il divertimento</title>
     <style>
-.accordion {
-  background-color: #23283c;
-  color: #aade80;
-  cursor: pointer;
-  padding: 12px 16px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  font-size: 1rem;
-  border-radius: 6px;
-  margin-top: 10px;
-  margin-bottom: 0;
-  transition: background 0.2s;
-}
-.accordion.active, .accordion:hover {
-  background-color: #2c3350;
-}
-.panel {
-  padding: 0 16px 12px 16px;
-  background-color: #19213b;
-  color: #fff;
-  display: none;
-  border-radius: 0 0 6px 6px;
-}
-.panel.show {
-  display: block;
-  animation: fadeIn 0.35s;
-}
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
 :root {
   --color-white: rgba(255, 255, 255, 1);
   --color-black: rgba(0, 0, 0, 1);
